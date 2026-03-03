@@ -1,14 +1,33 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Woahuh's writeups site"
+title = "Woahuh's site"
 theme = "PaperMod"
-
-mainSections = ["Writeups"]
 
 [menu]
 
   [[menu.main]]
-    name = "Writeups"
-    url = "/writeups/"
+    name = "Home"
+    url = "/"
     weight = 1
 
+  [[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    weight = 2
+
+  [[menu.main]]
+    name = "All Posts"
+    url = "/blog/"
+    parent = "blog"
+    weight = 1
+
+  [[menu.main]]
+    name = "Writeups"
+    url = "/writeups/"
+    parent = "blog"
+    weight = 2
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
