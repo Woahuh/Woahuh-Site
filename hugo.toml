@@ -26,8 +26,3 @@ theme = "PaperMod"
     url = "/writeups/"
     parent = "blog"
     weight = 2
-
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 3
